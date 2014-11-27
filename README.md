@@ -1,4 +1,3 @@
-techoGolf4
+Maraton Contra la pobreza
 ==========
 
-Gold por un Techo - 4ta edición
