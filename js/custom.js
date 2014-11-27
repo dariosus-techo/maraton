@@ -227,6 +227,8 @@
 					thisHref = thisHref.substring(pos, thisHref.length);
 				}
 
+				//console.log(thisHref);
+
 				thisTruePosition	= parseInt($(thisHref).offset().top);
 				thisPosition 		= thisTruePosition - headerWrapper - offsetTolerance;
 
@@ -299,6 +301,7 @@
 
 			return this.each(function(i, el){
 				$(el).click(function(e){
+
 					var idToLookAt;
 					if ($(el).attr('href').match(/#/) !== null) {
 						e.preventDefault();
@@ -326,7 +329,7 @@
 			});
 		};
 
-		$('#GoToHome, #GoToValues, #GoToModality, #GoToSponsors, #GoToPlace, #GoToContact' ).scrollTo({ speed: 1400 });
+		$('#GoToHome, #GoToInfo, #GoToCourses' ).scrollTo({ speed: 1400 });
 
 	});
 
@@ -583,3 +586,22 @@
 			$(".modalPayment").fadeIn();
 		});
 	});
+
+	$("#10kbtn").click(function(){
+		$(".rowMapa4").css("visibility", "hidden");
+		$(".rowMapa4").css("height", "0");
+		$(".rowMapa10").css("visibility", "visible");
+		$(".rowMapa10").css("height", "auto");
+		$('html,body').animate({scrollTop: $(this).offset().top}, 1000);
+	})
+
+	$("#4kbtn").click(function(){
+		$(".rowMapa10").css("visibility", "hidden");
+		$(".rowMapa10").css("height", "0");
+		$(".rowMapa4").css("visibility", "visible");
+		$(".rowMapa4").css("height", "auto");
+		$('html,body').animate({scrollTop: $(this).offset().top}, 1000);
+	})
+
+	//$(".rowMapa10").hide();
+	//$(".rowMapa4").hide();

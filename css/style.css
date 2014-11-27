@@ -177,12 +177,17 @@ a:focus {
 /*	 Section Titlebar
 /*------------------------------------------*/
 
+.rowRecorridos .titlebar {
+	margin-bottom: 20px;
+	text-align: center;
+}
+
 .titlebar {
 	margin-bottom: 60px;
 	text-align: center;
 }
 
-#modality .titlebar, #modality2 .titlebar {
+#info .titlebar, #info2 .titlebar {
 	margin-bottom: 0px;
 }
 
@@ -1863,7 +1868,7 @@ textarea {
 #footer {
 	padding-top: 80px;
 	padding-bottom: 60px;
-	background-color: #fff;
+	background-color: #262626;
 }
 
 /*------------------------------------------*/
@@ -1944,7 +1949,7 @@ textarea {
 
 
 #footer_copyright p {
-	color: #666;
+	color: #fff;
 	line-height: 40px;
 }
 
@@ -2220,7 +2225,7 @@ nav a#pull {
 	background-color: #0092DD;
 }
 
-#modality, #modality3 {
+#info, #info3 {
 	/*background-image: url(../img/thumbs/020_deporte_golf.jpg);*/
 	background-color: #262626;
 	background-size: contain;
@@ -2228,18 +2233,18 @@ nav a#pull {
 	color: #fff;
 }
 
-#modality > .layer, #modality3 > .layer  {
+#info > .layer, #info3 > .layer  {
 	width: 100%;
 	height: 100%;
 	position: relative;
 	/*background-color: rgba(18, 99, 23, 0.7);*/
 }
 
-#modality h3, #modality3 h3 {
+#info h3, #info3 h3 {
 	color: #fff;
 }
 
-#modality h2, #modality3 h2 {
+#info h2, #info3 h2 {
 	color: #fff;
 }
 
@@ -2275,7 +2280,7 @@ nav a#pull {
 	bottom: 15px;
 }
 
-#modality .fees, #modality3 .fees
+#info .fees, #info3 .fees
 {
 	text-align: center;
 }
@@ -2363,4 +2368,53 @@ nav a#pull {
 div.modalPayment
 {
 	display:none;
+}
+
+ul.nav a
+{
+	color: #bbb;
+}
+
+div.rowRecorridos
+{
+	overflow: hidden;
+	width: 38%;
+	margin: 0 auto;
+	margin-top: 25px;
+}
+
+.btnRecorrido
+{
+	float: left;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.btnRecorrido .btn
+{
+	font-size: 20px;
+}
+
+.rowMapa
+{
+	visibility: hidden;
+	height: 0px;
+}
+
+.rowMapa iframe
+{
+	border: 1px solid #ccc;
+	border-radius: 3px;
+}
+
+.rowMapa div.frame
+{
+	width: 54%;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+
+.containerRecorridos
+{
+	padding-bottom: 20px;
 }
